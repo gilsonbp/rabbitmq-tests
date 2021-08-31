@@ -1,5 +1,3 @@
-import sys
-
 import pika
 
 RABBIT_URL = "amqp://guest:guest@localhost:5672/local"

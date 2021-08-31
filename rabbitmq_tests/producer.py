@@ -9,7 +9,7 @@ connection = pika.BlockingConnection(pika.URLParameters(RABBIT_URL))
 channel = connection.channel()
 
 # Create exchange
-channel.exchange_declare(exchange="logs", exchange_type="fanout")
+channel.exchange_declare(exchange="stock", exchange_type="fanout")
 
 # Publish on exchange
 message = f"Message {datetime.datetime.now()}"
